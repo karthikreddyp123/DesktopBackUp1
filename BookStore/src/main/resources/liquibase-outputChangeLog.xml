@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="Karthik_Patlolla (generated)" id="1596017703386-1">
+        <createTable tableName="book">
+            <column autoIncrement="true" name="id" type="numeric(18, 0)">
+                <constraints primaryKey="true" primaryKeyName="PK__book__3213E83F7669D6D8"/>
+            </column>
+            <column name="genre" type="varchar(255)"/>
+            <column name="title" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Karthik_Patlolla (generated)" id="1596017703386-2">
+        <createTable tableName="user">
+            <column autoIncrement="true" name="id" type="numeric(18, 0)">
+                <constraints primaryKey="true" primaryKeyName="PK__user__3213E83F8E05A432"/>
+            </column>
+            <column name="password" type="varchar(255)"/>
+            <column name="role" type="varchar(255)"/>
+            <column name="username" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
